@@ -68,7 +68,7 @@ DEF OnQuadNoRotation Viewpoint {
 }
 # Copyright 2017-2019 The MathWorks, Inc.
 DEF TrackSection1 Transform {
-  translation 51 -0.02 90
+  translation 50.5 -0.02 90
   children Shape {
     appearance Appearance {
       material Material {
@@ -76,13 +76,14 @@ DEF TrackSection1 Transform {
       }
     }
     geometry Box {
-      size 2 0.001 0.1
+      size 1 0.001 0.1
     }
   }
 }
 # Copyright 2017 The MathWorks, Inc.
 DEF TrackSection2 Transform {
-  translation 52 -0.02 90.95
+  translation 51.31 -0.02 90.34
+  rotation 0 1 0 0.7854
   children Shape {
     appearance Appearance {
       material Material {
@@ -90,13 +91,13 @@ DEF TrackSection2 Transform {
       }
     }
     geometry Box {
-      size 0.1 0.001 2
+      size 0.1 0.001 1
     }
   }
 }
 # Copyright 2017 The MathWorks, Inc.
-DEF TrackSection3 Transform {
-  translation 52 -0.02 92.2
+DEF TrackSectionFinal Transform {
+  translation 53.7 -0.02 90.95
   children Shape {
     appearance Appearance {
       material Material {
@@ -120,6 +121,50 @@ DEF BlueMarker Transform {
     }
     geometry Box {
       size 0.2 0.01 0.2
+    }
+  }
+}
+# Copyright 2017 The MathWorks, Inc.
+DEF TrackSection3 Transform {
+  translation 51.95 -0.02 90.35
+  rotation 0 1 0 -0.7854
+  children Shape {
+    appearance Appearance {
+      material Material {
+        diffuseColor 1 0 0
+      }
+    }
+    geometry Box {
+      size 0.1 0.001 1
+    }
+  }
+}
+# Copyright 2017 The MathWorks, Inc.
+DEF TrackSection4 Transform {
+  translation 52.39 -0.02 90.5
+  rotation 0 1 0 0.2618
+  children Shape {
+    appearance Appearance {
+      material Material {
+        diffuseColor 1 0 0
+      }
+    }
+    geometry Box {
+      size 0.1 0.001 1
+    }
+  }
+}
+# Copyright 2017-2019 The MathWorks, Inc.
+DEF TrackSection5 Transform {
+  translation 52.95 -0.02 90.95
+  children Shape {
+    appearance Appearance {
+      material Material {
+        diffuseColor 1 0 0
+      }
+    }
+    geometry Box {
+      size 1 0.001 0.1
     }
   }
 }
