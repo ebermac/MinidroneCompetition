@@ -1,16 +1,23 @@
 % bwmasktrapezoid
 xmask = [65 95 90 70];
-ymask = [0 0 50 50];
+ymask = [0 0 40 40];
 bwmask1 = poly2mask(xmask,ymask,120,160);
 bwmasktrapezoid = boolean(bwmask1);
 imshow(bwmask1)
 
 
 % bwmaskpathtriangle
-xmask = [80 66 80];
-ymask = [20 20 60];
+% xmask = [80 66 70 80];
+% ymask = [20 20 40 40];
+% bwmaskleft = boolean(poly2mask(xmask,ymask,120,160));
+% bwmaskright = flip(bwmaskleft,2);
+
+xmask = [80 70 70 80];
+ymask = [20 20 40 40];
 bwmaskleft = boolean(poly2mask(xmask,ymask,120,160));
 bwmaskright = flip(bwmaskleft,2);
+
+
 
 bwmaskleft = int8(bwmaskleft);
 bwmaskright = int8(bwmaskright);
