@@ -1,6 +1,6 @@
 % bwmasktrapezoid
 xmask = [70 90 90 70];
-ymask = [0 0 40 40];
+ymask = [0 0 40 40T=];
 bwmask1 = poly2mask(xmask,ymask,120,160);
 bwmasktrapezoid = boolean(bwmask1);
 imshow(bwmask1)
