@@ -12,10 +12,16 @@ imshow(bwmask1)
 % bwmaskleft = boolean(poly2mask(xmask,ymask,120,160));
 % bwmaskright = flip(bwmaskleft,2);
 
-xmask = [80 70 75 80];
-ymask = [20 20 40 40];
+% xmask = [80 70 75 80];
+% ymask = [20 20 40 40];
+% bwmaskleft = boolean(poly2mask(xmask,ymask,120,160));
+% bwmaskright = flip(bwmaskleft,2);
+
+xmask = [80 70 70 75 80];
+ymask = [10 10 20 40 40];
 bwmaskleft = boolean(poly2mask(xmask,ymask,120,160));
 bwmaskright = flip(bwmaskleft,2);
+
 
 
 bwmaskleft = int8(bwmaskleft);
