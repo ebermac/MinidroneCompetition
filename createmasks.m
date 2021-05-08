@@ -18,7 +18,7 @@ imshow(bwmask1)
 % bwmaskright = flip(bwmaskleft,2);
 
 xmask = [80 70 70 75 80];
-ymask = [10 10 20 40 40];
+ymask = [10 10 20 55 55];
 bwmaskleft = boolean(poly2mask(xmask,ymask,120,160));
 bwmaskright = flip(bwmaskleft,2);
 
