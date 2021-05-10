@@ -56,8 +56,6 @@ bwmasktraveled = poly2mask(xmask,ymask,120,160);
 bwmasktraveled3 = ~boolean(bwmasktraveled);
 bwmasktraveled = bitand(bwmasktraveled1, bwmasktraveled2);
 bwmasktraveled = bitand(bwmasktraveled, bwmasktraveled3);
-imshow(bwmasktraveled)
-
 
 
 
