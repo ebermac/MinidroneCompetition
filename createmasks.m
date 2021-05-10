@@ -35,10 +35,34 @@ imshow(bwmaskpathtriangle~=0)
 
 
 % bwmasktraveled
+% xmask = [60 100 100 60];
+% ymask = [0 0 120 120];
+% bwmasktraveled = poly2mask(xmask,ymask,120,160);
+% bwmasktraveled = ~boolean(bwmasktraveled);
+% figure()
+% imshow(bwmasktraveled)
+
 xmask = [60 100 100 60];
 ymask = [0 0 120 120];
 bwmasktraveled = poly2mask(xmask,ymask,120,160);
-bwmasktraveled = ~boolean(bwmasktraveled);
+bwmasktraveled1 = ~boolean(bwmasktraveled);
+xmask = [0 35 35 0];
+ymask = [0 0 120 120];
+bwmasktraveled = poly2mask(xmask,ymask,120,160);
+bwmasktraveled2 = ~boolean(bwmasktraveled);
+xmask = [125 160 160 125];
+ymask = [0 0 120 120];
+bwmasktraveled = poly2mask(xmask,ymask,120,160);
+bwmasktraveled3 = ~boolean(bwmasktraveled);
+bwmasktraveled = bitand(bwmasktraveled1, bwmasktraveled2);
+bwmasktraveled = bitand(bwmasktraveled, bwmasktraveled3);
+imshow(bwmasktraveled)
+
+
+
+
+
+
 figure()
 imshow(bwmasktraveled)
 
