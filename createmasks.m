@@ -42,7 +42,7 @@ imshow(bwmaskpathtriangle~=0)
 % figure()
 % imshow(bwmasktraveled)
 
-xmask = [60 100 100 60];
+xmask = [62 98 98 62];
 ymask = [0 0 120 120];
 bwmasktraveled = poly2mask(xmask,ymask,120,160);
 bwmasktraveled1 = ~boolean(bwmasktraveled);
